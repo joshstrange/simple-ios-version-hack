@@ -26,9 +26,12 @@ Done! You can now use the commands: switch-to-7.0.4 and switch-to-7.0.6
 Once this is done you can use SSH or Mobile Terminal to "switch" your iOS version with the commands: 
 
 ````
-switch-to-7.0.4
-#And
-switch-to-7.0.6
+# SSH
+switch-to-7.0.4 OR switch-to-7.0.6
+
+#Mobile Terminal
+su
+switch-to-7.0.4 OR switch-to-7.0.6
 ````
 
 
