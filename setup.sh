@@ -8,11 +8,15 @@ curl --silent --insecure https://raw.github.com/joshstrange/simple-ios-version-h
 curl --silent --insecure https://raw.github.com/joshstrange/simple-ios-version-hack/master/SystemVersion.plist.7.0.6 -o /System/Library/CoreServices/SystemVersion.plist.7.0.6
 
 echo "Downloading scripts to switch SystemVersion files"
-curl --silent --insecure https://raw.github.com/joshstrange/simple-ios-version-hack/master/switch-to-7.0.4 -o ~/switch-to-7.0.4
-curl --silent --insecure https://raw.github.com/joshstrange/simple-ios-version-hack/master/switch-to-7.0.6 -o ~/switch-to-7.0.6
+curl --silent --insecure https://raw.github.com/joshstrange/simple-ios-version-hack/master/switch-to-7.0.4 -o /bin/switch-to-7.0.4
+curl --silent --insecure https://raw.github.com/joshstrange/simple-ios-version-hack/master/switch-to-7.0.6 -o /bin/switch-to-7.0.6
+
+echo "Changing Ownership"
+chown root:wheel /bin/switch-to-7.0.4
+chown root:wheel /bin/switch-to-7.0.6
 
 echo "Setting execute permissions"
-chmod u+x ~/switch-to-7.0.4
-chmod u+x ~/switch-to-7.0.6
+chmod 755 /bin/switch-to-7.0.4
+chmod 755 /bin/switch-to-7.0.6
 
-echo "Done! You can now use the commands: ./switch-to-7.0.4 and ./switch-to-7.0.6"
+echo "Done! You can now use the commands: switch-to-7.0.4 and switch-to-7.0.6"

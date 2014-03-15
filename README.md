@@ -18,16 +18,17 @@ This will setup everything for you. You will see the following output:
 Backing up original SystemVersion.plist to /System/Library/CoreServices/SystemVersion.plist.original
 Downloading 7.0.4 and 7.0.6 versions of SystemVersion
 Downloading scripts to switch SystemVersion files
+Changing Ownership
 Setting execute permissions
-Done! You can now use the commands: ./switch-to-7.0.4 and ./switch-to-7.0.6
+Done! You can now use the commands: switch-to-7.0.4 and switch-to-7.0.6
 ````
 
 Once this is done you can use SSH or Mobile Terminal to "switch" your iOS version with the commands: 
 
 ````
-./switch-to-7.0.4
+switch-to-7.0.4
 #And
-./switch-to-7.0.6
+switch-to-7.0.6
 ````
 
 
