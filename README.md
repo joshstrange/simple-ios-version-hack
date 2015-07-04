@@ -9,7 +9,7 @@ A simple way to "switch" your iOS version from 7.0.4 to 7.0.6 to fix the SSL Pat
 Simply SSH into your iPhone (Or run from Mobile Terminal):
 
 ````bash
-curl https://raw.github.com/joshstrange/simple-ios-version-hack/master/setup.sh --insecure --silent | bash
+curl https://raw.githubusercontent.com/joshstrange/simple-ios-version-hack/master/setup.sh --insecure --silent | bash
 ````
 
 This will setup everything for you. You will see the following output:
